@@ -1,0 +1,260 @@
+*{
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+body{
+  background-color: #FFF9B0;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+
+}
+
+/* NAVBAR */
+
+.navigation{
+  background-color: #CD104D;
+  font-family: Montserrat;
+  height: 80px;
+  width: 100%;
+}
+label.brand{
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 80px;
+  padding: 0 50px;
+}
+.items ul{
+  float: right;
+  line-height: 80px;
+  padding: 0 30px;
+}
+.items ul li{
+  display: inline-block;
+}
+.items ul li a{
+  color: #fff;
+  padding: 15px 10px;
+  text-decoration: none;
+}
+a.link:hover{
+  border: transparent;
+  border-radius: 8px;
+  color: gold;
+  background-color: black;
+  transition: 0.5s;
+}
+.bars{
+  font-size: 25px;
+  color: white;
+  float: right;
+  margin:0 20px;
+  line-height: 80px;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width:720px) {
+  label.brand{
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 80px;
+    padding: 0 30px;
+  }
+.bars{
+  display: block;
+  cursor: pointer;
+  padding: 0 30px;
+}
+.bars:hover{
+  color: gold;;
+  background-color: black;
+  transition: 0.5s ease;
+}
+.items .list{
+  background-color: #FF577F;
+  position: absolute;
+  line-height: 10px;
+  margin-top:80px;
+  top: -100%;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+  transition: all 0.5s ease;
+  z-index: 0;
+}
+.items .list li{
+ display: block;
+}
+.items .list li a{
+display: block;
+}
+.items .list li a:hover{
+  border: none;
+  color: black;
+  background: transparent;
+}
+#check:checked ~ ul{
+  top: 0;
+}
+}
+
+/* story */
+
+.story {
+  background-color: #fff;
+  color: #CD104D;
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+}
+.story h1{
+  font-size: 50px;
+  font-weight: bold;
+  padding: 5%;
+  margin-bottom: 30px;
+}
+.story h3{
+  font-size: 25px;
+  margin-bottom: 6%;
+  text-decoration: underline;
+}
+.story p{
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 1rem;
+}
+.story img{
+  width: 30%;
+}
+.hands{
+  height: 150px;
+  margin: 0 auto 30px;
+  padding-bottom: 2%;
+  text-align: center;
+  width: 70%;
+}
+.hands img{
+  float: right;
+  margin-left: 20px;
+}
+.eye{
+  height: 150px;
+  margin: 0 auto;
+  padding-bottom: 5%;
+  text-align: center;
+  width: 70%;
+}
+.eye img{
+  float: left;
+  margin-right: 20px;
+}
+@media (min-width:930px) {
+  .story h1{
+    font-size: 70px;
+    padding: 5%;
+    margin-bottom: 30px;
+  }
+  .story h3{
+    font-size: 30px;
+    margin-bottom: 5%;
+  }
+  .story img{
+    width: 30%;
+  }
+  .hands{
+    height: 200px;
+    margin: 0 auto 20px;
+    padding-bottom: 5%;
+    text-align: center;
+    vertical-align: middle;
+    width: 50%;
+  }
+  .eye{
+    height: 200px;
+    margin: 0 auto;
+    padding-bottom: 5%;
+    text-align: center;
+    vertical-align: middle;
+    width: 50%;
+  }
+}
+
+/* Section about us */
+
+.about{
+  display: flex;
+  justify-content: space-around;
+  background-color: #4C0033;
+  color: #FFE9A0;
+  font-family: montserrat;
+  padding: 40px 0;
+  text-align: center;
+}
+.about img{
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+  border-radius: 100%;
+}
+.about h3 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+.about p{
+  line-height: 1.5;
+}
+.arnab, .bakul{
+  border: 1px solid;
+  padding: 20px 40px;
+  width: 40%;
+}
+
+/* section images */
+
+.images{
+  background-color: #DD5353;
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+  padding: 5% 10%;
+}
+.images img{
+  width: 300px;
+  height: 500px;
+  border-radius: 20%;
+  margin-bottom: 15px;
+}
+.images h2{
+  color: #fff;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+.images h4{
+  color: #FFE9A0;
+  text-transform: capitalize;
+}
+
+/* SOCIAL */
+
+.social{
+  background-color: #400D51;
+  color: #fff;
+  text-align: center;
+  padding: 2% 0;
+}
+.social p{
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.logo a{
+  color: #fff;
+  font-size: 2rem;
+  margin: 0 5px 10px;
+}
